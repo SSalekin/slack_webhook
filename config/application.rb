@@ -1,10 +1,12 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'hirb'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+Hirb.enable({:width => 256, :height => 512})
 
 module Todo
   class Application < Rails::Application
