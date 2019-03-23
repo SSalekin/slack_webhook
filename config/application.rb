@@ -7,6 +7,7 @@ require 'hirb'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 Hirb.enable({:width => 256, :height => 512})
+HOST = "https://slack-webhook-salekin.c9users.io"
 
 module Todo
   class Application < Rails::Application
